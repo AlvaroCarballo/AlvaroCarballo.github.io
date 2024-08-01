@@ -1,0 +1,94 @@
+/* styles.css */
+body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #23b8ba;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 2em;
+}
+
+button {
+    background-color:#23b8ba;
+    color: white;
+    border: none;
+    padding: 1em;
+    margin: 0.5em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e7b7d;
+}
+
+.seccion-oculta {
+    display: none;
+}
+
+#menu-principal{
+    margin: 20px;
+}
+
+h2, h3 {
+    border-bottom: 2px solid #23b8ba;
+    padding-bottom: 0.5em;
+}
+
+form {
+    margin-top: 1em;
+}
+
+form div, form table {
+    margin-bottom: 1em;
+}
+
+#contenido-receta, #resultado-ajustes {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+}
+
+#tabla-ingredientes {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabla-ingredientes th, #tabla-ingredientes td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: left;
+}
+
+#tabla-ingredientes th {
+    background-color: #f2f2f2;
+}
+
+#tabla-ingredientes input {
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+#form-oculto {
+    margin-top: 1em;
+}
+
+#form-oculto input {
+    padding: 0.5em;
+    margin-right: 0.5em;
+}
+
+#ingredientes-ocultos ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
