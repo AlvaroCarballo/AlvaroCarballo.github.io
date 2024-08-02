@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Recetas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="Vector-1.svg" alt="Logo" class="logo">
+        <h1>Recetario </h1>
+
+    </header>
+    <main>
+        <section id="menu-principal" class="menu-principal-botones">
+            <button onclick="mostrarSeccion('recetario')">Recetario</button>
+            <button onclick="mostrarSeccion('ajustes')">Ajustes</button>
+            <button onclick="mostrarSeccion('reproceso')">Reproceso</button>
+        </section>
+        <section id="recetario" class="seccion-oculta">
+            <h2>Recetario</h2>
+            <form id="form-recetas">
+                <h3>VENETO</h3>
+                <div>
+                    <input type="checkbox" id="receta-veneto-almibar" name="receta" value="veneto-almibar">
+                    <label for="receta-veneto-almibar">Almibar Veneto</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="receta-veneto-blanca-fluida" name="receta" value="veneto-blanca-fluida">
+                    <label for="receta-veneto-blanca-fluida">Blanca Veneto fluida</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="receta-veneto-blanca-polvo" name="receta" value="veneto-blanca-polvo">
+                    <label for="receta-veneto-blanca-polvo">Blanca Veneto polvo</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="receta-veneto-chocolate-fluida" name="receta"
+                        value="veneto-chocolate-fluida">
+                    <label for="receta-veneto-chocolate-fluida">Chocolate Veneto fluida</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="receta-veneto-chocolate-polvo" name="receta"
+                        value="veneto-chocolate-polvo">
+                    <label for="receta-veneto-chocolate-polvo">Chocolate Veneto polvo</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="receta-veneto-dulce-de-leche-fluida" name="receta"
+                        value="veneto-Dulce-de-leche-fluida">
+                    <label for="receta-veneto-dulce-de-leche-fluida">Dulce de leche veneto fluida</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="receta-veneto-dulce-de-leche-polvo" name="receta"
+                        value="veneto-Dulce-de-leche-Polvo">
+                    <label for="receta-veneto-dulce-de-leche-polvo">Dulce de leche veneto polvo</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="receta-veneto-vainilla-fluida" name="receta"
+                        value="veneto-vainilla-fluida">
+                    <label for="receta-veneto-vainilla-fluida">Vainilla veneto fluida</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="receta-veneto-vainilla-polvo" name="receta"
+                        value="veneto-vainilla-polvo">
+                    <label for="receta-veneto-vainilla-polvo">Vainilla veneto polvo</label>
+                </div>
+
+                <hr>
+                <h3>TUNEL</h3>
+                <div>
+                    <div>
+                        <input type="checkbox" id="receta-tunel-almendrado-polvo" name="receta"
+                            value="tunel-almendrado-polvo">
+                        <label for="receta-tunel-almendrado-polvo">Almendrado tunel polvo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="receta-tunel-almendrado-fluida" name="receta"
+                            value="tunel-almendrado-fluida">
+                        <label for="receta-tunel-almendrado-fluida">Almendrado tunel fluida</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="receta-tunel-blanca-palo-fluida" name="receta"
+                            value="tunel-blanca-palo-fluida">
+                        <label for="receta-tunel-blanca-palo-fluida">Blanca tunel palo fluida</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="receta-tunel-blanca-palo-polvo" name="receta"
+                            value="tunel-blanca-palo-polvo">
+                        <label for="receta-tunel-blanca-palo-polvo">Blanca tunel palo polvo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="receta-tunel-chocolate-fluida" name="receta"
+                            value="tunel-chocolate-fluida">
+                        <label for="receta-tunel-chocolate-fluida">Chocolate tunel fluida</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="receta-tunel-chocolate-polvo" name="receta"
+                            value="tunel-chocolate-polvo">
+                        <label for="receta-tunel-chocolate-polvo">Chocolate tunel polvo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="receta-tunel-dulce-de-leche-fluida" name="receta"
+                            value="tunel-Dulce-de-leche-fluida">
+                        <label for="receta-tunel-dulce-de-leche-fluida">Dulce de leche Tunel fluida</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="receta-tunel-dulce-de-leche-polvo" name="receta"
+                            value="tunel-Dulce-de-leche-polvo">
+                        <label for="receta-tunel-dulce-de-leche-polvo">Dulce de leche Tunel Polvo</label>
+                    </div>
+
+
+
+                    <hr>
+                    <h3>COOL</h3>
+                    <!-- cool-blanca-polvo -->
+                    <div>
+                        <input type="checkbox" id="cool-blanca-polvo" name="receta" value="cool-blanca-polvo">
+                        <label for="cool-blanca-polvo">Blanca cool cream polvo</label>
+                    </div>
+
+                    <!-- cool-blanca-fluida -->
+                    <div>
+                        <input type="checkbox" id="cool-blanca-fluida" name="receta" value="cool-blanca-fluida">
+                        <label for="cool-blanca-fluida">Blanca Cool cream fluida</label>
+                    </div>
+
+                    <!-- cool-dulce-de-leche-fluida -->
+                    <div>
+                        <input type="checkbox" id="cool-dulce-de-leche-fluida" name="receta"
+                            value="cool-dulce-de-leche-fluida">
+                        <label for="cool-dulce-de-leche-fluida">Dulce de Leche Cool cream fluida</label>
+                    </div>
+
+                    <!-- cool-dulce-de-leche-polvo -->
+                    <div>
+                        <input type="checkbox" id="cool-dulce-de-leche-polvo" name="receta"
+                            value="cool-dulce-de-leche-polvo">
+                        <label for="cool-dulce-de-leche-polvo">Dulce de Leche Cool cream polvo</label>
+                    </div>
+
+                    <!-- cool-chocolate-fluida -->
+                    <div>
+                        <input type="checkbox" id="cool-chocolate-fluida" name="receta" value="cool-chocolate-fluida">
+                        <label for="cool-chocolate-fluida">Chocolate cool cream fluida</label>
+                    </div>
+
+                    <!-- cool-chocolate-polvo -->
+                    <div>
+                        <input type="checkbox" id="cool-chocolate-polvo" name="receta" value="cool-chocolate-polvo">
+                        <label for="cool-chocolate-polvo">Chocolate cool cream polvo</label>
+                    </div>
+
+                    <button type="button" onclick="verReceta()">Ver</button>
+            </form>
+            <div id="contenido-receta">
+                <h3>Ingredientes</h3>
+                <!-- Aquí se mostrará el contenido de la receta seleccionada -->
+            </div>
+            <div id="seccion-oculta-e" class="seccion-oculta-e">
+                <h3>Estabilizantes/Emulsionantes</h3>
+                <form id="form-oculto">
+                    <input type="password" id="clave" placeholder="Ingrese clave">
+                    <button type="button" onclick="accederSeccionOculta()">Acceder</button>
+                    <div id="ingredientes-ocultos" class="seccion-oculta">
+                        <!-- Ingredientes ocultos se mostrarán aquí -->
+                    </div>
+                </form>
+            </div>
+            <button onclick="mostrarSeccion('menu-principal')">Volver al Inicio</button>
+        </section>
+        <section id="ajustes" class="seccion-oculta">
+            <h2>Ajustes</h2>
+            <form id="form-ajustes">
+                <label for="receta-ajustes">Selecciona la receta:</label>
+                <select id="receta-ajustes">
+                    <option value="veneto-almibar">Almibar Veneto</option>
+                    <option value="veneto-blanca-fluida">Blanca Veneto fluida</option>
+                    <option value="veneto-blanca-polvo">Blanca Veneto polvo</option>
+                    <option value="veneto-chocolate-fluida">Chocolate Veneto fluida</option>
+                    <option value="veneto-chocolate-polvo">Chocolate Veneto polvo</option>
+                    <option value="veneto-dulce-de-leche-fluida">Dulce de leche veneto fluida</option>
+                    <option value="veneto-Dulce-de-leche-Polvo">Dulce de leche veneto polvo</option>
+                    <option value="veneto-vainilla-fluida">Vainilla veneto fluida</option>
+                    <option value="veneto-vainilla-polvo">Vainilla veneto polvo</option>
+                    <hr><br>
+                    <option value="tunel-almendrado-polvo">Almendrado tunel polvo</option>
+                    <option value="tunel-almendrado-fluida">Almendrado tunel fluida</option>
+                    <option value="tunel-blanca-palo-fluida">Blanca tunel palo fluida</option>
+                    <option value="tunel-blanca-palo-polvo">Blanca tunel palo polvo</option>
+                    <option value="tunel-chocolate-fluida">Chocolate tunel casata fluida</option>
+                    <option value="tunel-chocolate-polvo">Chocolate tunel casata polvo</option>
+                    <option value="tunel-Dulce-de-leche-fluida">Dulce de leche Tunel fluida</option>
+                    <option value="tunel-Dulce-de-leche-polvo">Dulce de leche Tunel Polvo</option>
+                    <hr><br>
+                    <option value="cool-blanca-polvo">Blanca cool cream polvo</option>
+                    <option value="cool-blanca-fluida">Blanca Cool cream fluida</option>
+                    <option value="cool-dulce-de-leche-fluida">Dulce de Leche Cool cream fluida</option>
+                    <option value="cool-dulce-de-leche-polvo">Dulce de Leche Cool cream polvo</option>
+                    <option value="cool-chocolate-fluida">Chocolate cool cream fluida</option>
+                    <option value="cool-chocolate-polvo">Chocolate cool cream polvo</option>
+
+
+
+                </select>
+                <button type="button" onclick="cargarIngredientes()">Cargar Ingredientes</button>
+                <table id="tabla-ingredientes">
+                    <!-- Aquí se mostrarán los ingredientes de la receta seleccionada -->
+                </table>
+                <button type="button" onclick="calcularFaltantes()">Calcular Faltantes</button>
+            </form>
+            <div id="resultado-ajustes">
+                <!-- Aquí se mostrará el resultado del cálculo -->
+            </div>
+            <button onclick="mostrarSeccion('menu-principal')">Volver al Inicio</button>
+        </section>
+        <section id="reproceso" class="seccion-oculta">
+            <h2>Reproceso</h2>
+            <form id="form-reproceso">
+                <label for="receta-reproceso">Selecciona la receta:</label>
+                <select id="receta-reproceso">
+                    <option value="veneto-almibar">Almibar Veneto</option>
+                    <option value="veneto-blanca-fluida">Blanca Veneto fluida</option>
+                    <option value="veneto-blanca-polvo">Blanca Veneto polvo</option>
+                    <option value="veneto-chocolate-fluida">Chocolate Veneto fluida</option>
+                    <option value="veneto-chocolate-polvo">Chocolate Veneto polvo</option>
+                    <option value="veneto-dulce-de-leche-fluida">Dulce de leche veneto fluida</option>
+                    <option value="veneto-Dulce-de-leche-Polvo">Dulce de leche veneto polvo</option>
+                    <option value="veneto-vainilla-fluida">Vainilla veneto fluida</option>
+                    <option value="veneto-vainilla-polvo">Vainilla veneto polvo</option>
+                    <hr><br>
+                    <option value="tunel-almendrado-polvo">Almendrado tunel polvo</option>
+                    <option value="tunel-almendrado-fluida">Almendrado tunel fluida</option>
+                    <option value="tunel-blanca-palo-fluida">Blanca tunel palo fluida</option>
+                    <option value="tunel-blanca-palo-polvo">Blanca tunel palo polvo</option>
+                    <option value="tunel-chocolate-fluida">Chocolate tunel fluida</option>
+                    <option value="tunel-chocolate-polvo">Chocolate tunel polvo</option>
+                    <option value="tunel-Dulce-de-leche-fluida">Dulce de leche Tunel fluida</option>
+                    <option value="tunel-Dulce-de-leche-polvo">Dulce de leche Tunel Polvo</option>
+                    <hr><br>
+                    <option value="cool-blanca-polvo">Blanca cool cream polvo</option>
+                    <option value="cool-blanca-fluida">Blanca Cool cream fluida</option>
+                    <option value="cool-dulce-de-leche-fluida">Dulce de Leche Cool cream fluida</option>
+                    <option value="cool-dulce-de-leche-polvo">Dulce de Leche Cool cream polvo</option>
+                    <option value="cool-chocolate-fluida">Chocolate cool cream fluida</option>
+                    <option value="cool-chocolate-polvo">Chocolate cool cream polvo</option>
+
+                </select><br><br>
+                <label for="solidos-necesarios">Sólidos necesarios (kg):</label>
+                <input type="number" id="solidos-necesarios" step="any"><br><br>
+                <label for="volumen-reproceso">Volumen de reproceso (kg):</label>
+                <input type="number" id="volumen-reproceso" step="any"><br><br>
+                <label for="brix-reproceso">Lectura en grados Brix (%):</label>
+                <input type="number" id="brix-reproceso" step="any"><br><br>
+                <button type="button" onclick="calcularIngredientesReproceso()">Calcular</button>
+            </form>
+            <h3>Ingredientes Faltantes</h3>
+            <table id="ingredientesTable-reproceso" border="1">
+                <thead>
+                    <tr>
+                        <th>Ingrediente</th>
+                        <th>Cantidad Faltante (kg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los resultados se mostrarán aquí -->
+                </tbody>
+            </table>
+            <button onclick="mostrarSeccion('menu-principal')">Volver al Inicio</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -31,7 +31,7 @@ const recetas = {
                 'MG': { valor: 2.200, unidad: 'kg' },
             }
         },
-        'veneto-blanca-Polvo': {
+        'veneto-blanca-polvo': {
             nombre: 'Blanca Veneto polvo',
             ingredientesVisibles: {
                 'Agua': { valor: 611, unidad: 'l' },
@@ -301,7 +301,7 @@ const recetas = {
         },
     },
     cool: {
-        'cool-blanca-polvo ': {
+        'cool-blanca-polvo': {
             nombre: 'Blanca cool cream polvo',
             ingredientesVisibles: {
                 'Agua': { valor: 666, unidad: 'l' },
