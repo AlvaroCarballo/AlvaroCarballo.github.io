@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2880 1800">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-7 {
+        opacity: .3;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-5" width="2880" height="558"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-5" width="2880" height="558"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-5" width="2880" height="558"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect class="cls-5" width="2880" height="558"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <rect class="cls-5" width="2880" height="558"/>
+    </clipPath>
+  </defs>
+  <image class="cls-7" width="500" height="500" transform="translate(377 35) scale(.73)" xlink:href="../../../../../../Downloads/image-removebg-preview (4).png"/>
+  <g class="cls-4">
+    <image class="cls-7" width="500" height="500" transform="translate(-65.19 20) rotate(7.12) scale(1.32)" xlink:href="../../../../../../Downloads/image-removebg-preview (3).png"/>
+  </g>
+  <g class="cls-2">
+    <image class="cls-7" width="500" height="500" transform="translate(364 115) scale(1.39)" xlink:href="../../../../../../Downloads/image-removebg-preview (2).png"/>
+  </g>
+  <g class="cls-1">
+    <image class="cls-7" width="500" height="500" transform="translate(1808 127) scale(1.25)" xlink:href="../../../../../../Downloads/image-removebg-preview (5).png"/>
+  </g>
+  <g class="cls-6">
+    <image class="cls-7" width="500" height="500" transform="translate(2304 34) scale(1.42)" xlink:href="../../../../../../Downloads/image-removebg-preview (1).png"/>
+  </g>
+  <g class="cls-3">
+    <image class="cls-7" width="500" height="500" transform="translate(1958 119.36) rotate(-33.28)" xlink:href="../../../../../../Downloads/image-removebg-preview (6).png"/>
+  </g>
+</svg>
