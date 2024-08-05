@@ -459,7 +459,53 @@ function verReceta() {
         contenidoRecetaDiv.appendChild(recetaDiv);
     });
 }
+function modificarIngredientes() {
+    const valor = document.getElementById('input-modificar').value;
+    if (!valor) {
+        alert('Ingrese un valor válido.');
+        return;
+    }
+    
+    const factor = valor / 900;
+    const recetasSeleccionadas = document.querySelectorAll('#form-recetas input[name="receta"]:checked');
+    const ingredientesModificadosDiv = document.getElementById('ingredientes-modificados');
+    ingredientesModificadosDiv.innerHTML = '';
 
+    recetasSeleccionadas.forEach(receta => {
+        const recetaId = receta.value;
+        let recetaData;
+        let tipo = '';
+
+        if (recetaId.includes('veneto')) {
+            tipo = 'veneto';
+        } else if (recetaId.includes('tunel')) {
+            tipo = 'tunel';
+        } else if (recetaId.includes('cool')) {
+            tipo = 'cool';
+        }
+
+        recetaData = recetas[tipo][recetaId];
+
+        const recetaDiv = document.createElement('div');
+        recetaDiv.innerHTML = `<h3>${recetaData.nombre} - Ingredientes Modificados</h3>`;
+
+        const listaIngredientesModificados = document.createElement('ul');
+        for (const [ingrediente, { valor, unidad }] of Object.entries(recetaData.ingredientesVisibles)) {
+            const li = document.createElement('li');
+            li.textContent = `${ingrediente}: ${(valor * factor).toFixed(2)} ${unidad}`;
+            listaIngredientesModificados.appendChild(li);
+        }
+
+        for (const [ingrediente, { valor, unidad }] of Object.entries(recetaData.ingredientesOcultos)) {
+            const li = document.createElement('li');
+            li.textContent = `${ingrediente}: ${(valor * factor).toFixed(2)} ${unidad}`;
+            listaIngredientesModificados.appendChild(li);
+        }
+
+        recetaDiv.appendChild(listaIngredientesModificados);
+        ingredientesModificadosDiv.appendChild(recetaDiv);
+    });
+}
 function accederSeccionOculta() {
     const clave = document.getElementById('clave').value;
     const ingredientesOcultosDiv = document.getElementById('ingredientes-ocultos');
